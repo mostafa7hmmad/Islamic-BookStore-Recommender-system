@@ -86,8 +86,7 @@ namespace CleanArchitecture.DataAccess.Migrations
                 name: "BookCategories",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
                 },
                 constraints: table =>
@@ -103,7 +102,9 @@ namespace CleanArchitecture.DataAccess.Migrations
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Author = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CoverImagePath = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    BookCategoryId = table.Column<int>(type: "int", nullable: false)
+                    BookCategoryId = table.Column<int>(type: "int", nullable: false),
+                    AuthorId = table.Column<int>(type: "int", nullable: false),
+                    TopicId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -121,8 +122,8 @@ namespace CleanArchitecture.DataAccess.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "2633d06c-7618-4d88-b511-cf6e38ec900d", "2", "User", "User" },
-                    { "992c2109-3149-488f-9122-552bcfd172f5", "1", "Admin", "Admin" }
+                    { "1230c550-4095-4c4c-a2ca-cb628120e161", "2", "User", "User" },
+                    { "fb0ed766-e2a9-498e-81db-3d6f7d3542a0", "1", "Admin", "Admin" }
                 });
 
             migrationBuilder.CreateIndex(
@@ -143,12 +144,12 @@ namespace CleanArchitecture.DataAccess.Migrations
             migrationBuilder.DeleteData(
                 table: "AspNetRoles",
                 keyColumn: "Id",
-                keyValue: "2633d06c-7618-4d88-b511-cf6e38ec900d");
+                keyValue: "1230c550-4095-4c4c-a2ca-cb628120e161");
 
             migrationBuilder.DeleteData(
                 table: "AspNetRoles",
                 keyColumn: "Id",
-                keyValue: "992c2109-3149-488f-9122-552bcfd172f5");
+                keyValue: "fb0ed766-e2a9-498e-81db-3d6f7d3542a0");
 
             migrationBuilder.DropColumn(
                 name: "Age",

@@ -206,14 +206,14 @@ namespace CleanArchitecture.DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "07a5482a-3ba7-4219-9fe9-f5195d6b0bf3",
+                            Id = "fb0ed766-e2a9-498e-81db-3d6f7d3542a0",
                             ConcurrencyStamp = "1",
                             Name = "Admin",
                             NormalizedName = "Admin"
                         },
                         new
                         {
-                            Id = "fef766f3-53c0-4157-a0be-74957eb61e45",
+                            Id = "1230c550-4095-4c4c-a2ca-cb628120e161",
                             ConcurrencyStamp = "2",
                             Name = "User",
                             NormalizedName = "User"

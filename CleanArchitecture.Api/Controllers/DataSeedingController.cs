@@ -63,23 +63,11 @@ namespace CleanArchitecture.Api.Controllers
                 new BookCategory { Id = 1, Name = "Fiqh (Jurisprudence)" },
                 new BookCategory { Id = 2, Name = "Hadith" },
                 new BookCategory { Id = 3, Name = "Seerah (Prophetic Biography)" },
-                new BookCategory { Id = 4, Name = "Tafsir & General" } // Merging General into the last valid index
+                new BookCategory { Id = 4, Name = "Tafsir & General" }
             };
 
-            await using var transaction = await _context.Database.BeginTransactionAsync();
-            try
-            {
-                // Temporarily allow inserting explicit primary key values.
-                await _context.Database.ExecuteSqlRawAsync("SET IDENTITY_INSERT dbo.BookCategories ON;");
-                await _context.BookCategories.AddRangeAsync(categories);
-                await _context.SaveChangesAsync();
-                await transaction.CommitAsync();
-            }
-            finally
-            {
-                // Always turn IDENTITY_INSERT back OFF.
-                await _context.Database.ExecuteSqlRawAsync("SET IDENTITY_INSERT dbo.BookCategories OFF;");
-            }
+            await _context.BookCategories.AddRangeAsync(categories);
+            await _context.SaveChangesAsync();
 
             return $"{categories.Count} categories have been successfully created.";
         }
