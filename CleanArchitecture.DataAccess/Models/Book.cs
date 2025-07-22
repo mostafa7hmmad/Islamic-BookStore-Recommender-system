@@ -24,5 +24,6 @@ namespace CleanArchitecture.DataAccess.Models
         // --- NEW PROPERTIES REQUIRED BY THE ONNX MODEL ---
         public int AuthorId { get; set; }
         public int TopicId { get; set; }
+        public string? ImageUrl { get; set; }
     }
 }
