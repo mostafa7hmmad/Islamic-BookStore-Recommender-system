@@ -81,6 +81,8 @@ namespace CleanArchitecture.Api
 
             builder.Services.AddSignalR();
 
+            builder.Services.AddScoped<IDataSeedingService, DataSeedingService>();
+
             var app = builder.Build();
 
             // Redis ImageHelper Config
