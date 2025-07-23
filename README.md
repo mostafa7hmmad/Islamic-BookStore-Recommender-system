@@ -1,11 +1,6 @@
 # islamic-books-recommender-system API
 
-A **hybrid recommender system** for Islamic books, combining:
-
-- Deep learning-based user-item interaction modeling
-- Content-based filtering using metadata similarity
-
-The system provides **personalized book recommendations** using user demographics, preferences, and book metadata. Built with `Python`, `TensorFlow`, `scikit-learn`, and `pandas`, it is **modular**, **scalable**, and **deployable** via `Flask`.
+![img](1.png)
 
 ---
 ```
