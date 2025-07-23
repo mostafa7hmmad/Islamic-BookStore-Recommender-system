@@ -21,20 +21,15 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      # The 'dotnet restore' command will restore packages for the entire solution
       run: dotnet restore
     - name: Build
-      # The 'dotnet build' command will build the entire solution
       run: dotnet build --no-restore
     - name: Test
-      # The 'dotnet test' command will run tests for the entire solution
       run: dotnet test --no-build --verbosity normal
 
   deploy:
     runs-on: ubuntu-latest
-    # This job depends on the build job to succeed first
     needs: build
-    # This sets the deployment environment details for GitHub
     environment:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
@@ -49,17 +44,19 @@ jobs:
           dotnet-version: 8.0.x
       
       - name: Publish the API Project
-        # This command publishes the specific API project and its dependencies
         run: dotnet publish CleanArchitecture.Api/CleanArchitecture.Api.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp 
+      
+      # <<<--- NEW STEP ADDED HERE ---<<<
+      - name: Log in to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          # This is the name of your Azure App Service
           app-name: 'bookrecommendation'
           slot-name: 'Production'
-          # This secret contains your Azure publish profile
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          # This is the path to the app to be deployed
+          # NOTE: The publish-profile is no longer needed here as we logged in above
           package: ${{env.DOTNET_ROOT}}/myapp
