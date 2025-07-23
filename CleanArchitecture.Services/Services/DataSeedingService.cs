@@ -72,25 +72,25 @@ namespace CleanArchitecture.Services.Services
                 // BookCategoryId: 1:Aqeedah, 2:Fiqh, 3:Hadith, 4:Seerah, 5:Tafsir, 6:General
                 // TopicId is often related to the CategoryId in simple models.
                 // AuthorId is a placeholder.
-                new Book { Id = 0, Title = "Al-Wajiz in Fiqh", BookCategoryId = 1, AuthorId = 1, TopicId = 2, ImageUrl = "/images/books/Al-Wajiz in Fiqh.jpg" },
-                new Book { Id = 1, Title = "Aqeedah Wasitiyyah", BookCategoryId = 0, AuthorId = 2, TopicId = 1, ImageUrl = "/images/books/Aqeedah Wasitiyyah.jpg" },
-                new Book { Id = 2, Title = "Aqeedah at-Tahawiyyah - Part 1", BookCategoryId = 0, AuthorId = 3, TopicId = 1, ImageUrl = "/images/books/Aqeedah at-Tahawiyyah - Part 1.jpg" },
-                new Book { Id = 3, Title = "Aqeedah at-Tahawiyyah - Part 2", BookCategoryId = 0, AuthorId = 3, TopicId = 1, ImageUrl = "/images/books/Aqeedah at-Tahawiyyah - Part 2.jpg" },
-                new Book { Id = 4, Title = "Aqeedah at-Tahawiyyah - Part 3", BookCategoryId = 0, AuthorId = 3, TopicId = 1, ImageUrl = "/images/books/Aqeedah at-Tahawiyyah - Part 3.jpg" },
-                new Book { Id = 5, Title = "Ar-Raheeq Al-Makhtum", BookCategoryId = 3, AuthorId = 4, TopicId = 4, ImageUrl = "/images/books/Ar-Raheeq Al-Makhtum.jpg" },
-                new Book { Id = 6, Title = "Bulugh al-Maram", BookCategoryId = 2, AuthorId = 5, TopicId = 3, ImageUrl = "/images/books/Bulugh al-Maram.jpg" },
-                new Book { Id = 7, Title = "Don't Be Sad", BookCategoryId = 4, AuthorId = 6, TopicId = 6, ImageUrl = "/images/books/Don't Be Sad.jpg" },
-                new Book { Id = 8, Title = "Enjoy Your Life", BookCategoryId = 4, AuthorId = 7, TopicId = 6, ImageUrl = "/images/books/Enjoy Your Life.jpg" },
-                new Book { Id = 9, Title = "Explanation of the Forty Nawawi Hadith - Part 1", BookCategoryId = 2, AuthorId = 8, TopicId = 3, ImageUrl = "/images/books/Explanation of the Forty Nawawi Hadith - Part 1.jpg" },
-                new Book { Id = 10, Title = "Explanation of the Forty Nawawi Hadith - Part 2", BookCategoryId = 3, AuthorId = 8, TopicId = 3, ImageUrl = "/images/books/Explanation of the Forty Nawawi Hadith - Part 2.jpg" },
-                new Book { Id = 11, Title = "Explanation of the Forty Nawawi Hadith - Part 3", BookCategoryId = 3, AuthorId = 8, TopicId = 3, ImageUrl = "/images/books/Explanation of the Forty Nawawi Hadith - Part 3.jpg" },
-                new Book { Id = 12, Title = "Fiqh Made Easy", BookCategoryId = 2, AuthorId = 9, TopicId = 2, ImageUrl = "/images/books/Fiqh Made Easy.jpg" },
-                new Book { Id = 13, Title = "Fiqh Made Easy - Part 1", BookCategoryId = 2, AuthorId = 9, TopicId = 2, ImageUrl = "/images/books/Fiqh Made Easy - Part 1.jpg" },
-                new Book { Id = 14, Title = "Fiqh Made Easy - Part 2", BookCategoryId = 2, AuthorId = 9, TopicId = 2, ImageUrl = "/images/books/Fiqh Made Easy - Part 2.jpg" },
-                new Book { Id = 15, Title = "Fiqh Made Easy - Part 3", BookCategoryId = 2, AuthorId = 9, TopicId = 2, ImageUrl = "/images/books/Fiqh Made Easy - Part 3.jpg" },
-                new Book { Id = 16, Title = "Forty Hadith Nawawi", BookCategoryId = 3, AuthorId = 8, TopicId = 3, ImageUrl = "/images/books/Forty Hadith Nawawi.jpg" },
+                new Book { Id = 0, Title = "Al-Wajiz in Fiqh", BookCategoryId = 1, AuthorId = 1, TopicId = 2, CoverImagePath = "/images/books/Al-Wajiz in Fiqh.jpg" },
+                new Book { Id = 1, Title = "Aqeedah Wasitiyyah", BookCategoryId = 0, AuthorId = 2, TopicId = 1, CoverImagePath = "/images/books/Aqeedah Wasitiyyah.jpg" },
+                new Book { Id = 2, Title = "Aqeedah at-Tahawiyyah - Part 1", BookCategoryId = 0, AuthorId = 3, TopicId = 1, CoverImagePath = "/images/books/Aqeedah at-Tahawiyyah - Part 1.jpg" },
+                new Book { Id = 3, Title = "Aqeedah at-Tahawiyyah - Part 2", BookCategoryId = 0, AuthorId = 3, TopicId = 1, CoverImagePath = "/images/books/Aqeedah at-Tahawiyyah - Part 2.jpg" },
+                new Book { Id = 4, Title = "Aqeedah at-Tahawiyyah - Part 3", BookCategoryId = 0, AuthorId = 3, TopicId = 1, CoverImagePath = "/images/books/Aqeedah at-Tahawiyyah - Part 3.jpg" },
+                new Book { Id = 5, Title = "Ar-Raheeq Al-Makhtum", BookCategoryId = 3, AuthorId = 4, TopicId = 4, CoverImagePath = "/images/books/Ar-Raheeq Al-Makhtum.jpg" },
+                new Book { Id = 6, Title = "Bulugh al-Maram", BookCategoryId = 2, AuthorId = 5, TopicId = 3, CoverImagePath = "/images/books/Bulugh al-Maram.jpg" },
+                new Book { Id = 7, Title = "Don't Be Sad", BookCategoryId = 4, AuthorId = 6, TopicId = 6, CoverImagePath = "/images/books/Don't Be Sad.jpg" },
+                new Book { Id = 8, Title = "Enjoy Your Life", BookCategoryId = 4, AuthorId = 7, TopicId = 6, CoverImagePath = "/images/books/Enjoy Your Life.jpg" },
+                new Book { Id = 9, Title = "Explanation of the Forty Nawawi Hadith - Part 1", BookCategoryId = 2, AuthorId = 8, TopicId = 3, CoverImagePath = "/images/books/Explanation of the Forty Nawawi Hadith - Part 1.jpg" },
+                new Book { Id = 10, Title = "Explanation of the Forty Nawawi Hadith - Part 2", BookCategoryId = 3, AuthorId = 8, TopicId = 3, CoverImagePath = "/images/books/Explanation of the Forty Nawawi Hadith - Part 2.jpg" },
+                new Book { Id = 11, Title = "Explanation of the Forty Nawawi Hadith - Part 3", BookCategoryId = 3, AuthorId = 8, TopicId = 3, CoverImagePath = "/images/books/Explanation of the Forty Nawawi Hadith - Part 3.jpg" },
+                new Book { Id = 12, Title = "Fiqh Made Easy", BookCategoryId = 2, AuthorId = 9, TopicId = 2, CoverImagePath = "/images/books/Fiqh Made Easy.jpg" },
+                new Book { Id = 13, Title = "Fiqh Made Easy - Part 1", BookCategoryId = 2, AuthorId = 9, TopicId = 2, CoverImagePath = "/images/books/Fiqh Made Easy - Part 1.jpg" },
+                new Book { Id = 14, Title = "Fiqh Made Easy - Part 2", BookCategoryId = 2, AuthorId = 9, TopicId = 2, CoverImagePath = "/images/books/Fiqh Made Easy - Part 2.jpg" },
+                new Book { Id = 15, Title = "Fiqh Made Easy - Part 3", BookCategoryId = 2, AuthorId = 9, TopicId = 2, CoverImagePath = "/images/books/Fiqh Made Easy - Part 3.jpg" },
+                new Book { Id = 16, Title = "Forty Hadith Nawawi", BookCategoryId = 3, AuthorId = 8, TopicId = 3, CoverImagePath = "/images/books/Forty Hadith Nawawi.jpg" },
                 // ... (continue for all books in the same pattern) ...
-                new Book { Id = 66, Title = "When the Moon Split", BookCategoryId = 4, AuthorId = 4, TopicId = 4, ImageUrl = "/images/books/When the Moon Split.jpg" }
+                new Book { Id = 66, Title = "When the Moon Split", BookCategoryId = 4, AuthorId = 4, TopicId = 4, CoverImagePath = "/images/books/When the Moon Split.jpg" }
             };
 
             await _context.Books.AddRangeAsync(books);

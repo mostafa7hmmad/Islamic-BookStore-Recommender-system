@@ -148,9 +148,6 @@ namespace CleanArchitecture.DataAccess.Migrations
                     b.Property<string>("CoverImagePath")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ImageUrl")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -162,7 +159,7 @@ namespace CleanArchitecture.DataAccess.Migrations
 
                     b.HasIndex("BookCategoryId");
 
-                    b.ToTable("Books");
+                    b.ToTable("Books", (string)null);
                 });
 
             modelBuilder.Entity("CleanArchitecture.DataAccess.Models.BookCategory", b =>
@@ -177,7 +174,7 @@ namespace CleanArchitecture.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("BookCategories");
+                    b.ToTable("BookCategories", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -209,14 +206,14 @@ namespace CleanArchitecture.DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "7d864d26-4566-4f29-90bf-eb4160fb21f1",
+                            Id = "fb0ed766-e2a9-498e-81db-3d6f7d3542a0",
                             ConcurrencyStamp = "1",
                             Name = "Admin",
                             NormalizedName = "Admin"
                         },
                         new
                         {
-                            Id = "97c26abe-aaeb-4af7-be58-51ee10e68b1f",
+                            Id = "1230c550-4095-4c4c-a2ca-cb628120e161",
                             ConcurrencyStamp = "2",
                             Name = "User",
                             NormalizedName = "User"

@@ -82,7 +82,8 @@ namespace CleanArchitecture.Api
             builder.Services.AddSignalR();
 
             builder.Services.AddScoped<IDataSeedingService, DataSeedingService>();
-
+            builder.Services.AddScoped<IBookService, BookService>();
+            builder.Services.AddAutoMapper(cfg => cfg.AddProfile<MappingProfile>());
             var app = builder.Build();
 
             // Redis ImageHelper Config
