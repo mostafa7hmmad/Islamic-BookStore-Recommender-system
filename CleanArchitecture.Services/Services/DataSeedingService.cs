@@ -89,7 +89,55 @@ namespace CleanArchitecture.Services.Services
                 new Book { Id = 14, Title = "Fiqh Made Easy - Part 2", BookCategoryId = 2, AuthorId = 9, TopicId = 2, CoverImagePath = "/images/books/Fiqh Made Easy - Part 2.jpg" },
                 new Book { Id = 15, Title = "Fiqh Made Easy - Part 3", BookCategoryId = 2, AuthorId = 9, TopicId = 2, CoverImagePath = "/images/books/Fiqh Made Easy - Part 3.jpg" },
                 new Book { Id = 16, Title = "Forty Hadith Nawawi", BookCategoryId = 3, AuthorId = 8, TopicId = 3, CoverImagePath = "/images/books/Forty Hadith Nawawi.jpg" },
-                // ... (continue for all books in the same pattern) ...
+                new Book { Id = 17, Title = "The Meaning of La ilaha illa Allah", BookCategoryId = 1, AuthorId = 2, TopicId = 1, CoverImagePath = "/images/books/Al-Wajiz in Fiqh.jpg" },
+                new Book { Id = 18, Title = "Principles of Islamic Faith", BookCategoryId = 1, AuthorId = 2, TopicId = 1, CoverImagePath = "/images/books/Aqeedah Wasitiyyah.jpg" },
+                new Book { Id = 19, Title = "The Names and Attributes of Allah", BookCategoryId = 1, AuthorId = 2, TopicId = 1, CoverImagePath = "/images/books/Aqeedah at-Tahawiyyah - Part 1.jpg" },
+                new Book { Id = 20, Title = "Understanding Tawheed", BookCategoryId = 1, AuthorId = 2, TopicId = 1, CoverImagePath = "/images/books/Aqeedah at-Tahawiyyah - Part 2.jpg" },
+                new Book { Id = 21, Title = "Major and Minor Shirk", BookCategoryId = 1, AuthorId = 2, TopicId = 1, CoverImagePath = "/images/books/Aqeedah at-Tahawiyyah - Part 3.jpg" },
+                new Book { Id = 22, Title = "The Life of the Prophet", BookCategoryId = 3, AuthorId = 4, TopicId = 4, CoverImagePath = "/images/books/Ar-Raheeq Al-Makhtum.jpg" },
+                new Book { Id = 23, Title = "Stories from Sahih al-Bukhari", BookCategoryId = 2, AuthorId = 5, TopicId = 3, CoverImagePath = "/images/books/Bulugh al-Maram.jpg" },
+                new Book { Id = 24, Title = "Cure for the Anxious Heart", BookCategoryId = 4, AuthorId = 6, TopicId = 6, CoverImagePath = "/images/books/Don't Be Sad.jpg" },
+                new Book { Id = 25, Title = "Etiquettes of Dealing with Others", BookCategoryId = 4, AuthorId = 7, TopicId = 6, CoverImagePath = "/images/books/Enjoy Your Life.jpg" },
+                new Book { Id = 26, Title = "Commentary on Hadith 1–10", BookCategoryId = 2, AuthorId = 8, TopicId = 3, CoverImagePath = "/images/books/Explanation of the Forty Nawawi Hadith - Part 1.jpg" },
+                new Book { Id = 27, Title = "Commentary on Hadith 11–20", BookCategoryId = 2, AuthorId = 8, TopicId = 3, CoverImagePath = "/images/books/Explanation of the Forty Nawawi Hadith - Part 2.jpg" },
+                new Book { Id = 28, Title = "Commentary on Hadith 21–30", BookCategoryId = 2, AuthorId = 8, TopicId = 3, CoverImagePath = "/images/books/Explanation of the Forty Nawawi Hadith - Part 3.jpg" },
+                new Book { Id = 29, Title = "Basics of Worship in Islam", BookCategoryId = 2, AuthorId = 9, TopicId = 2, CoverImagePath = "/images/books/Fiqh Made Easy.jpg" },
+                new Book { Id = 30, Title = "Prayer According to Sunnah", BookCategoryId = 2, AuthorId = 9, TopicId = 2, CoverImagePath = "/images/books/Fiqh Made Easy - Part 1.jpg" },
+                new Book { Id = 31, Title = "Zakah: Purity of Wealth", BookCategoryId = 2, AuthorId = 9, TopicId = 2, CoverImagePath = "/images/books/Fiqh Made Easy - Part 2.jpg" },
+                new Book { Id = 32, Title = "Fasting in Ramadan", BookCategoryId = 2, AuthorId = 9, TopicId = 2, CoverImagePath = "/images/books/Fiqh Made Easy - Part 3.jpg" },
+                new Book { Id = 33, Title = "The Final Day: Belief in the Hereafter", BookCategoryId = 1, AuthorId = 10, TopicId = 1, CoverImagePath = "/images/books/Al-Wajiz in Fiqh.jpg" },
+                new Book { Id = 34, Title = "Angels in Islam", BookCategoryId = 1, AuthorId = 10, TopicId = 1, CoverImagePath = "/images/books/Aqeedah Wasitiyyah.jpg" },
+                new Book { Id = 35, Title = "Jinn and Human Interaction", BookCategoryId = 1, AuthorId = 10, TopicId = 1, CoverImagePath = "/images/books/Aqeedah at-Tahawiyyah - Part 1.jpg" },
+                new Book { Id = 36, Title = "The Biography of Abu Bakr", BookCategoryId = 3, AuthorId = 4, TopicId = 4, CoverImagePath = "/images/books/Ar-Raheeq Al-Makhtum.jpg" },
+                new Book { Id = 37, Title = "Women in the Qur'an", BookCategoryId = 4, AuthorId = 6, TopicId = 6, CoverImagePath = "/images/books/Don't Be Sad.jpg" },
+                new Book { Id = 38, Title = "Youth and Islam", BookCategoryId = 4, AuthorId = 7, TopicId = 6, CoverImagePath = "/images/books/Enjoy Your Life.jpg" },
+                new Book { Id = 39, Title = "Understanding Hadith Terminology", BookCategoryId = 2, AuthorId = 8, TopicId = 3, CoverImagePath = "/images/books/Explanation of the Forty Nawawi Hadith - Part 1.jpg" },
+                new Book { Id = 40, Title = "Manners of the Prophet", BookCategoryId = 3, AuthorId = 4, TopicId = 4, CoverImagePath = "/images/books/Explanation of the Forty Nawawi Hadith - Part 2.jpg" },
+                new Book { Id = 41, Title = "Salah: The Believer's Ascension", BookCategoryId = 2, AuthorId = 9, TopicId = 2, CoverImagePath = "/images/books/Fiqh Made Easy.jpg" },
+                new Book { Id = 42, Title = "Unity and Brotherhood in Islam", BookCategoryId = 4, AuthorId = 6, TopicId = 6, CoverImagePath = "/images/books/Don't Be Sad.jpg" },
+                new Book { Id = 43, Title = "Islamic Morals & Manners", BookCategoryId = 4, AuthorId = 7, TopicId = 6, CoverImagePath = "/images/books/Enjoy Your Life.jpg" },
+                new Book { Id = 44, Title = "Inspiring Quranic Stories", BookCategoryId = 4, AuthorId = 12, TopicId = 5, CoverImagePath = "/images/books/Aqeedah at-Tahawiyyah - Part 3.jpg" },
+                new Book { Id = 45, Title = "Lives of the Prophets", BookCategoryId = 3, AuthorId = 4, TopicId = 4, CoverImagePath = "/images/books/Ar-Raheeq Al-Makhtum.jpg" },
+                new Book { Id = 46, Title = "Lessons from Hijrah", BookCategoryId = 3, AuthorId = 4, TopicId = 4, CoverImagePath = "/images/books/Explanation of the Forty Nawawi Hadith - Part 3.jpg" },
+                new Book { Id = 47, Title = "Faith in Times of Fitnah", BookCategoryId = 1, AuthorId = 2, TopicId = 1, CoverImagePath = "/images/books/Aqeedah Wasitiyyah.jpg" },
+                new Book { Id = 48, Title = "Spiritual Cleanliness", BookCategoryId = 4, AuthorId = 6, TopicId = 6, CoverImagePath = "/images/books/Fiqh Made Easy - Part 1.jpg" },
+                new Book { Id = 49, Title = "Friday Sermons by the Prophet", BookCategoryId = 2, AuthorId = 8, TopicId = 3, CoverImagePath = "/images/books/Bulugh al-Maram.jpg" },
+                new Book { Id = 50, Title = "Duties of the Muslim Woman", BookCategoryId = 4, AuthorId = 7, TopicId = 6, CoverImagePath = "/images/books/Fiqh Made Easy - Part 2.jpg" },
+                new Book { Id = 51, Title = "Signs of the Last Day", BookCategoryId = 1, AuthorId = 10, TopicId = 1, CoverImagePath = "/images/books/Fiqh Made Easy - Part 3.jpg" },
+                new Book { Id = 52, Title = "Calling to Allah: Methods and Etiquette", BookCategoryId = 4, AuthorId = 11, TopicId = 6, CoverImagePath = "/images/books/Enjoy Your Life.jpg" },
+                new Book { Id = 53, Title = "Jurisprudence of Worship", BookCategoryId = 2, AuthorId = 9, TopicId = 2, CoverImagePath = "/images/books/Al-Wajiz in Fiqh.jpg" },
+                new Book { Id = 54, Title = "Biography of Umar ibn al-Khattab", BookCategoryId = 3, AuthorId = 4, TopicId = 4, CoverImagePath = "/images/books/Ar-Raheeq Al-Makhtum.jpg" },
+                new Book { Id = 55, Title = "Biography of Uthman ibn Affan", BookCategoryId = 3, AuthorId = 4, TopicId = 4, CoverImagePath = "/images/books/Aqeedah at-Tahawiyyah - Part 2.jpg" },
+                new Book { Id = 56, Title = "Biography of Ali ibn Abi Talib", BookCategoryId = 3, AuthorId = 4, TopicId = 4, CoverImagePath = "/images/books/Aqeedah at-Tahawiyyah - Part 1.jpg" },
+                new Book { Id = 57, Title = "Du'a from the Quran and Sunnah", BookCategoryId = 4, AuthorId = 7, TopicId = 6, CoverImagePath = "/images/books/Explanation of the Forty Nawawi Hadith - Part 3.jpg" },
+                new Book { Id = 58, Title = "How to Protect Your Iman", BookCategoryId = 1, AuthorId = 2, TopicId = 1, CoverImagePath = "/images/books/Aqeedah Wasitiyyah.jpg" },
+                new Book { Id = 59, Title = "The Path to Paradise", BookCategoryId = 4, AuthorId = 6, TopicId = 6, CoverImagePath = "/images/books/Don't Be Sad.jpg" },
+                new Book { Id = 60, Title = "Building a Muslim Home", BookCategoryId = 4, AuthorId = 6, TopicId = 6, CoverImagePath = "/images/books/Fiqh Made Easy.jpg" },
+                new Book { Id = 61, Title = "Wisdom of the Prophet", BookCategoryId = 3, AuthorId = 4, TopicId = 4, CoverImagePath = "/images/books/Explanation of the Forty Nawawi Hadith - Part 1.jpg" },
+                new Book { Id = 62, Title = "Life After Death in Islam", BookCategoryId = 1, AuthorId = 10, TopicId = 1, CoverImagePath = "/images/books/Aqeedah at-Tahawiyyah - Part 3.jpg" },
+                new Book { Id = 63, Title = "The Quran and Modern Science", BookCategoryId = 4, AuthorId = 12, TopicId = 5, CoverImagePath = "/images/books/Fiqh Made Easy - Part 1.jpg" },
+                new Book { Id = 64, Title = "Understanding Islamic Law", BookCategoryId = 2, AuthorId = 9, TopicId = 2, CoverImagePath = "/images/books/Fiqh Made Easy - Part 2.jpg" },
+                new Book { Id = 65, Title = "The Manners of the Salaf", BookCategoryId = 4, AuthorId = 7, TopicId = 6, CoverImagePath = "/images/books/Fiqh Made Easy - Part 3.jpg" },
                 new Book { Id = 66, Title = "When the Moon Split", BookCategoryId = 4, AuthorId = 4, TopicId = 4, CoverImagePath = "/images/books/When the Moon Split.jpg" }
             };
 
@@ -156,7 +204,7 @@ namespace CleanArchitecture.Services.Services
             return $"{created} created, {updated} updated.";
         }
 
-        // helper methods
+        #region helper methods
         private string MapGender(int code) => code == 1 ? "Female" : "Male";
         private string MapCountry(int code) => $"Country_Code_{code}";
         private string MapEducation(int code) => $"Education_Level_{code}";
@@ -174,6 +222,7 @@ namespace CleanArchitecture.Services.Services
             public int education_level { get; set; }
             public int religious_level { get; set; }
             public int topic_idx { get; set; }
+            #endregion
         }
     }
 }
