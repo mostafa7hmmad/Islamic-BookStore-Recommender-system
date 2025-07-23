@@ -51,8 +51,7 @@ islamic-books-recommender-system/
 │   └── train_model.py
 │
 └── requirements.txt
-
-
+```
 
 graph TD
     A[Load Data] --> B[Preprocess & Merge]
