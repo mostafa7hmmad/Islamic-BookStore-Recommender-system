@@ -1,0 +1,65 @@
+# This workflow will build and deploy a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: .NET CI/CD
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+    - name: Restore dependencies
+      # The 'dotnet restore' command will restore packages for the entire solution
+      run: dotnet restore
+    - name: Build
+      # The 'dotnet build' command will build the entire solution
+      run: dotnet build --no-restore
+    - name: Test
+      # The 'dotnet test' command will run tests for the entire solution
+      run: dotnet test --no-build --verbosity normal
+
+  deploy:
+    runs-on: ubuntu-latest
+    # This job depends on the build job to succeed first
+    needs: build
+    # This sets the deployment environment details for GitHub
+    environment:
+      name: 'Production'
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      
+      - name: Publish the API Project
+        # This command publishes the specific API project and its dependencies
+        run: dotnet publish CleanArchitecture.Api/CleanArchitecture.Api.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp 
+
+      - name: Deploy to Azure Web App
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v2
+        with:
+          # This is the name of your Azure App Service
+          app-name: 'bookrecommendation'
+          slot-name: 'Production'
+          # This secret contains your Azure publish profile
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          # This is the path to the app to be deployed
+          package: ${{env.DOTNET_ROOT}}/myapp
