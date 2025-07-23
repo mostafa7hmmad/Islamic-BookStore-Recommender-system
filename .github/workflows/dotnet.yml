@@ -45,18 +45,15 @@ jobs:
       
       - name: Publish the API Project
         run: dotnet publish CleanArchitecture.Api/CleanArchitecture.Api.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp 
-      
-      # <<<--- NEW STEP ADDED HERE ---<<<
-      - name: Log in to Azure
-        uses: azure/login@v1
-        with:
-          creds: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
+          # This is the name of your Azure App Service
           app-name: 'bookrecommendation'
           slot-name: 'Production'
-          # NOTE: The publish-profile is no longer needed here as we logged in above
+          # This line uses your publish profile secret directly
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          # This is the path to the app to be deployed
           package: ${{env.DOTNET_ROOT}}/myapp
