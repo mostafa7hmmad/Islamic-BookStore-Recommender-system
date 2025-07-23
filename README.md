@@ -53,6 +53,11 @@ islamic-books-recommender-system/
 └── requirements.txt
 ```
 
+
+---
+
+## 🔁 Workflow Diagram
+```
 graph TD
     A[Load Data] --> B[Preprocess & Merge]
     B --> C[Feature Engineering]
@@ -65,3 +70,4 @@ graph TD
     I --> J[Deploy via Flask/FastAPI]
     J --> K[Monitor Accuracy]
     K --> L[Maintain + Retrain]
+
